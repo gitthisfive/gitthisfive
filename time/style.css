@@ -1,0 +1,328 @@
+
+/*
+========================================================================
+# 1.0 - General styles
+------------------------------------------------------------------------
+*/
+body, html {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0;
+  background: #fff;
+  color: #424242;
+ -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding-bottom: 5px;
+	color: #d44646;
+	line-height: normal;
+	font-weight: normal;
+	margin: 0 0 10px;
+}
+h1 {
+	font-family: 'Lobster', cursive;
+	color: #00a7dd;
+}
+h2, h2, h3 {
+	font-family: 'Lobster', cursive;
+}
+
+h1 { font-size: 60px;}
+h2 { font-size: 48px;}
+h3 { font-size: 36px;}
+h4 { font-size: 26px;}
+h5 { font-size: 18px;}
+h6 { font-size: 14px;}
+
+h2 small {
+	font-size: 24px;
+	line-height: 14px;
+	letter-spacing: 0.025em;
+}
+h4 small {
+	display:block;
+}
+h5 small {
+	display: block;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	color: #e1704b;
+	line-height: 28px;
+	letter-spacing: 0.025em;
+}
+
+p {
+	font-weight: 400;
+}
+
+a {color: #d44646}
+a:hover {color: #d44646; text-decoration: none;}
+a:active {color: #d44646;}
+
+ul, li {
+	list-style: none;
+}
+
+
+/*-----/. default-btn style-----*/
+
+.default-btn {
+	text-transform: uppercase;
+    background: transparent;
+    color: #fff;
+	font-size: 16px;
+	line-height: normal;
+    letter-spacing: 0.025em;
+	font-weight: 700;
+    position: relative;
+    padding: 12px 40px;
+    border: 1px solid #fff;
+	-webkit-transition: all .5s ease;
+	   -moz-transition: all .5s ease;
+	    -ms-transition: all .5s ease;
+	     -o-transition: all .5s ease;
+	        transition: all .5s ease;
+	border-radius: 0px;
+}
+.default-btn:hover {
+	background: #D44646;
+	border: 1px solid #D44646;
+}
+.default-btn:hover,
+.default-btn.active,
+.default-btn:active {
+	color: #fff;
+	z-index: 1;
+}
+.white {
+	background: #fff;
+}
+.lightsmoke {
+	background: #fafafa;
+}
+.img-thumbnail {
+	padding: 10px;
+	border: none;
+    border-radius: 2px;
+}
+
+/*----- form placeholder style-----*/
+
+.form-control::-moz-placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+  font-size: 12px;
+  line-height: 18px;
+}
+.form-control::-ms-input-placeholder {
+  color: #bdbdbd;
+  font-size: 12px;
+  line-height: 18px;
+}
+.form-control::-webkit-input-placeholder {
+  color: #bdbdbd;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/*-----on focus style-----*/
+
+.form-control:focus::-moz-placeholder {
+  color: #000;
+}
+.form-control:focus:-ms-input-placeholder {
+  color: #000;
+}
+.form-control:focus::-webkit-input-placeholder {
+  color: #000;
+}
+
+/*-----section style-----*/
+.heading {
+	margin-bottom: 80px; 
+}
+
+/*-----transparent background-----*/
+
+.color-overlay {
+	background: rgba(0,0,0,0.7); 
+	padding: 100px 0;
+}
+
+.social-icon:after,
+.social-icon:before,
+.story-block ul:after,
+.story-block ul:before,
+.blog-meta:after,
+.blog-meta:before,
+.popular-post ul li:after,
+.popular-post ul li:before,
+.single-blog-meta:before,
+.single-blog-meta:after,
+.single-post-thumnail:after,
+.single-post-thumnail:before
+ {
+	content: "";
+	display: table;
+}
+.social-icon:after,
+.social-icon:before,
+.story-block ul:after,
+.story-block ul:before,
+.blog-meta:after,
+.blog-meta:before,
+.popular-post ul li:after,
+.popular-post ul li:before,
+.single-blog-meta:before,
+.single-blog-meta:after,
+.single-post-thumnail:after,
+.single-post-thumnail:before {
+	clear: both;
+}
+.heading h3 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+.heading h3::after {
+	position: absolute;
+	top: 5px;
+	right: -85px;
+	content: url(heading_rignt.png);
+	width: 75px;
+	height: 35px;
+}
+.heading h3::before {
+	position: absolute;
+	content: url(heading_left.png);
+	width: 75px;
+	height: 35px;
+	top: 5px;
+	left: -85px;
+} 
+
+
+
+/*
+========================================================================
+# 3 - Time styles
+------------------------------------------------------------------------
+*/
+
+.banner .wrapper {
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.banner-logo {
+	position: relative;
+	display: inline-block;
+	background: url(../img/icon/main_logo.png) no-repeat center center;
+	width: 310px;
+	height: 305px;
+	padding: 115px 0px;
+	margin-top: 80px;
+	margin-bottom: 107px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	z-index: 2;
+}
+.banner-logo h2 {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	line-height: 36px;
+}
+.banner-logo small {
+	color: #fff;
+	display: inline-block;
+}
+.time_circles {
+	z-index: 2;
+}
+.timing .time_circles > div > span[style] {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	line-height: normal!important; 
+	margin: 0;
+	color: #d22a2a;
+	display: table-row;
+	margin-bottom: 2px;
+	font-size: 24px !important;
+}
+.timing .time_circles > div {
+	padding: 0 14px;
+	display: table;
+	vertical-align: middle;
+}
+.timing .time_circles > div > h4 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	line-height: normal!important;
+	color: #d22a2a;
+	text-transform: capitalize;
+	border-radius: 0 0 20px 20px;
+	display: table-row;
+	font-size: 18px !important;
+}
+
+
+
+/*
+========================================================================
+# 9 - Gift block styles
+------------------------------------------------------------------------
+*/
+
+.gift {
+	padding: 100px 0;
+}
+.gift-block {
+	position: relative;
+    padding: 65px 20px;
+    text-align: center;    
+	border: 3px solid #D3D3D3;
+    background: rgba(219,219,219,.9);
+    z-index: 1;
+    -webkit-transition: .3s ease-in;
+       -moz-transition: .3s ease-in;
+        -ms-transition: .3s ease-in;
+         -o-transition: .3s ease-in;
+            transition: .3s ease-in;
+}
+.gift-block:hover {
+	border: 3px solid #d44640;
+}
+.gift-block:hover .gift-overlay {
+	z-index: -1;
+	background: #fff; 
+}
+.gift-block a {	
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+}
+.gift-block img {
+    display: inline-block;
+}
+.gift-overlay {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: rgba(219,219,219,.9);
+	-webkit-transition: .3s ease-in;
+       -moz-transition: .3s ease-in;
+        -ms-transition: .3s ease-in;
+         -o-transition: .3s ease-in;
+            transition: .3s ease-in;
+}
+

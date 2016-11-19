@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://www.gbtags.com/gb/rtreplayerpreview/1364.htm -->
+<html class=" -webkit-">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Majesty | qixi</title>
+<link href="qixi.css" type="text/css" rel="stylesheet">
+<!-- <script src="http://libs.useso.com/js/jquery/1.10.2/jquery.min.js"></script> -->
+<script src="jquery.min.js"></script>
+<script src="jquery.knob.js"></script>
+<script src="jquery.throttle.js"></script>
+<script src="jquery.classycountdown.js"></script> 
+<link rel="stylesheet" type="text/css" href="jquery.classycountdown.css" />
+</head>
+<body>
+<object id="object" style="border:0px;" type="text/x-scriptlet" data="../nav.html" width=100% height=60></object>
+<div class="rose">
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="petal"></div>
+  <div class="text">
+    <span style="color:#FFF">亲爱的4，</span>
+    <span style="color:#FFF">中秋节快乐</span>
+  </div>
+</div>
+<span style="color:#FFF">You are my princess</span>
+<div id="countdown10" class="ClassyCountdownDemo"></div>
+<!-- 推荐开源CDN来选取需引用的外部JS //-->
+<script type="text/javascript" src="./prefixfree.min.js"></script>
+<script>
+  $(document).ready(function() 
+  { 
+      var theend,thenow;
+      theend = Date.parse(new Date("2016-10-01 00:00:00"));
+      thenow = Date.parse(new Date());
+      
+      if(thenow==theend){
+      	//theend = Date.parse(new Date("2016-09-16 00:00:00"));
+	  }
+      if(thenow>theend){
+        theend = Date.parse(new Date("2017-01-01 00:00:00"));
+      }
+      else{}
+      theend = theend.toString().substr(0, 10);
+      thenow = thenow.toString().substr(0, 10);
+
+    $('#countdown10').ClassyCountdown({
+      end: theend,
+      now: thenow,
+      labels: true,
+      labelsOptions: {
+        lang: {
+          days: 'Days',
+          hours: 'hours',
+          minutes: 'minutes',
+          seconds: 'seconds'
+        },
+        style: 'font-size:0.5em; text-transform:uppercase;'
+      },
+      style: {
+        element: "",
+        textResponsive: .5,
+        days: {
+          gauge: {
+            thickness: .02,
+            bgColor: "rgba(255,255,255,0.1)",
+            fgColor: "rgba(255,255,255,1)",
+            lineCap: 'round'
+          },
+          textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:rgba(255,255,255,0.7);'
+        },
+        hours: {
+          gauge: {
+            thickness: .02,
+            bgColor: "rgba(255,255,255,0.1)",
+            fgColor: "rgba(255,255,255,1)",
+            lineCap: 'round'
+          },
+          textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:rgba(255,255,255,0.7);'
+        },
+        minutes: {
+          gauge: {
+            thickness: .02,
+            bgColor: "rgba(255,255,255,0.1)",
+            fgColor: "rgba(255,255,255,1)",
+            lineCap: 'round'
+          },
+          textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:rgba(255,255,255,0.7);'
+        },
+        seconds: {
+          gauge: {
+            thickness: .02,
+            bgColor: "rgba(255,255,255,0.1)",
+            fgColor: "rgba(255,255,255,1)",
+            lineCap: 'round'
+          },
+          textCSS: 'font-family:\'Open Sans\'; font-size:25px; font-weight:300; color:rgba(255,255,255,0.7);'
+        },
+      },
+      onEndCallback: function() {
+        console.log("Time out!");
+      }
+    });
+
+  });
+</script>
+
+</body>
+</html>
